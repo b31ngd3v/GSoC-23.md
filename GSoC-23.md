@@ -12,7 +12,17 @@
 
 ## Summary
 
-### CVE Binary Tool GitHub Action
+### CVE Binary Tool Basic GitHub Action
+
+Developed a github action for cve-bin-tool which will produce CVE reports in the GitHub security tab and will be able to split the issues on the basis of triage. It will be smart enough to scan dependency lists of various languages and suggest version upgrades. Also it will produce reports in the form of html and pdf by default in the security tab.
+
+### SBOM Integration
+
+Added the feature which will help the tool running as a GitHub Action to detect and scan SBOM files in the repository and will help to generate an SBOM and keep it up to date through regular scans.
+
+### Mirror Work
+
+CVE Binary Tool uses NVD's vulnerability database, there is a lot of restrictions like rate limiting even when using an API key. So I and [John](https://github.com/warthog9) created a mirror that will host the NVD data and made the tool compatible to use the mirror data.
 
 ## Tasks Achieved
 
