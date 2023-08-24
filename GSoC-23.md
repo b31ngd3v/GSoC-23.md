@@ -14,7 +14,7 @@
 
 ### CVE Binary Tool Basic GitHub Action
 
-Developed a github action for cve-bin-tool which will produce CVE reports in the GitHub security tab and will be able to split the issues on the basis of triage. It will be smart enough to scan dependency lists of various languages and suggest version upgrades. Also it will produce reports in the form of html and pdf by default in the security tab.
+Added a GitHub Action for CVE Binary Tool. This will make it easier for new users to try out regular repo scanning and automation with minimal setup. It will produce CVE reports in the GitHub security tab and will be able to split the issues on the basis of triage and will be smart enough to scan dependency lists of various languages and suggest version upgrades. Also it will produce reports in the form of html and pdf by default in the security tab.
 
 ### SBOM Integration
 
@@ -22,7 +22,7 @@ Added the feature which will help the tool running as a GitHub Action to detect 
 
 ### Mirror Work
 
-CVE Binary Tool uses NVD's vulnerability database, there is a lot of restrictions like rate limiting even when using an API key. So I and [John](https://github.com/warthog9) created a mirror that will host the NVD data and made the tool compatible to use the mirror data.
+CVE Binary Tool uses NVD's vulnerability database, there is a lot of restrictions like rate limiting even when using an API key. So I and [John](https://github.com/warthog9) created a mirror that will host the NVD data and made the tool compatible to use the mirror data. The NVD mirrors are being globally distributed on the same infrastructure that covers around 50% of global open source mirrors. We're now able to provide global colocation without rate limits or changing APIs, thus enabling users worldwide greater access to publicly known vulnerability data, even if they aren't using CVE Binary Tool. Not only will this allow users to have faster access, it should reduce the number of errors users see getting data (especially on windows). This might be the first ever public mirror of NVD.
 
 ## Tasks Achieved
 
